@@ -21,7 +21,7 @@ class BookListCreateAPIView(generics.GenericAPIView):
         return self.serializer_classes.get(self.request.method)
 
     def get_queryset(self):
-        return Book.objects.filter(user=self.request.user)
+        return Book.objects.filter(user=self.request.user).prefetch_related("user")
 
     def get(self, request, *args, **kwargs):
         queryset = self.get_queryset()
@@ -48,7 +48,7 @@ class BookDetailAPIView(generics.GenericAPIView):
 
     def get_queryset(self):
         if self.request.user.is_authenticated:
-            return Book.objects.filter(user=self.request.user)
+            return Book.objects.filter(user=self.request.user).select_related("user")
         else:
             return Book.objects.none()
 

@@ -32,23 +32,31 @@ class OpenLibrary:
             "isbn": isbn,
         }
 
-        r = requests.get(
-            url=url,
-            params=params,
-            timeout=30,
-        )
+        try:
+            r = requests.get(
+                url=url,
+                params=params,
+                timeout=30,
+            )
 
-        response = r.json()
-        new_response = cls.parse_book_details(data=response)
+            response = r.json()
+            new_response = cls.parse_book_details(data=response)
 
-        data = {
-            "status": None,
-            "data": new_response,
-        }
+            data = {
+                "status": None,
+                "data": new_response,
+            }
 
-        if isinstance(new_response, list):
-            data["status"] = True
-        else:
-            data["status"] = False
+            if isinstance(new_response, list):
+                data["status"] = True
+            else:
+                data["status"] = False
 
-        return data
+            return data
+
+        except requests.RequestException as err:
+            return {
+                "status": False,
+                "message": "something went wrong",
+                "error": str(err),
+            }

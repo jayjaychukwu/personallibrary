@@ -1,3 +1,4 @@
+from django.urls import reverse
 from faker import Faker
 from rest_framework.test import APITestCase
 
@@ -29,3 +30,5 @@ class TestSetup(APITestCase):
         }
 
         self.book = Book.objects.create(**self.book_dict)
+
+        self.register_url = reverse("register")

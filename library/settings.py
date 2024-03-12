@@ -146,3 +146,14 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=3),
 }
+
+# Swagger docs settings
+SWAGGER_SETTINGS = {
+    "SECURITY_DEFINITIONS": {
+        "Auth Token eg [Bearer (JWT)]": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header",
+        }
+    }
+}

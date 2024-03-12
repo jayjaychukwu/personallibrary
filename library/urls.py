@@ -6,9 +6,9 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Dx API",
+        title="Personal Library API",
         default_version="v1",
-        description="An API for diagnosis codes",
+        description="An API for Personal Library Management System",
         terms_of_service="#",
         contact=openapi.Contact(email="odionye.jude@outlook.com"),
         license=openapi.License(name="Test License"),

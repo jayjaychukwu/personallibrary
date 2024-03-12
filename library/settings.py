@@ -24,6 +24,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
+    "drf_yasg",
 ]
 
 LOCAL_APPS = [

@@ -26,7 +26,9 @@ THIRD_PARTY_APPS = [
     "rest_framework_simplejwt",
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "accounts",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",

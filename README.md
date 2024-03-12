@@ -42,6 +42,12 @@ A Personal Library Management System API developed using Python, Django, Django 
    docker-compose restart web  
    ```
 
+5. Run the tests
+
+   ```shell
+   docker-compose exec web python manage.py test
+   ```
+
 - To create a superuser for the admin dashboard, run the following command:
   
     ```shell
@@ -55,6 +61,7 @@ A Personal Library Management System API developed using Python, Django, Django 
 
 - Swagger Docs: `http://localhost:8000/`
 - ReDoc: `http://localhost:8000/redoc/`
+- Postman Docs: docs/Personal-Library.postman_collection.json
 
 ## Architecture
 

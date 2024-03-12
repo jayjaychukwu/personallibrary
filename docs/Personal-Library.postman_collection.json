@@ -1,0 +1,1106 @@
+{
+	"info": {
+		"_postman_id": "3cb3b916-b3a6-45e6-8f7a-19cd0499e1d5",
+		"name": "Personal-Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22976805"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin2\",\r\n    \"password\": \"admin12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/accounts/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"register",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New User Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin2\",\r\n    \"password\": \"admin12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/accounts/register/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:35:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "545"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"user registered successfully\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzA4LCJpYXQiOjE3MTAyNjQ5MDgsImp0aSI6ImI1ZmM2ZjFjMTU0ZTQ2MGE4NTE5OTY2NTAwZDVkMzc4IiwidXNlcl9pZCI6Mn0.VhbVvqE89NyqTysRviYVZaSNhLlKlz9G7aM5dk-d0gY\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMDUyNDEwOCwiaWF0IjoxNzEwMjY0OTA4LCJqdGkiOiI3NTk4NTc2ZmM5MGQ0Mzg0OTU5ZjY2YzBiZmU4MDM5MiIsInVzZXJfaWQiOjJ9.8ngTKRRw4jptg53l3t2zmLyeEjCtEICXymCj9xlCkww\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin2\",\r\n    \"password\": \"admin12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/accounts/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin2\",\r\n    \"password\": \"admin12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/accounts/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:36:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMDUyNDE3MywiaWF0IjoxNzEwMjY0OTczLCJqdGkiOiI3Zjg1MzgwZGQwZGI0YjI5YTM0ZjU4ZmFhNTlhMDFjNyIsInVzZXJfaWQiOjJ9.sVuJLM1ex_8__mkNWEUCiDqqDQReU-YYzGr-6EKyOcc\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Prince\",\r\n  \"author\": \"Niccolo Machiavelli\",\r\n  \"ISBN\": \"7839012342\",\r\n  \"publication_date\": \"2024-03-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "book created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Prince\",\r\n  \"author\": \"Niccolo Machiavelli\",\r\n  \"ISBN\": \"7839012342\",\r\n  \"publication_date\": \"2024-03-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/books/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:38:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"updated_at\": \"2024-03-12T17:38:01.435466Z\",\n    \"created_at\": \"2024-03-12T17:38:01.435518Z\",\n    \"title\": \"The Prince\",\n    \"author\": \"Niccolo Machiavelli\",\n    \"ISBN\": \"7839012342\",\n    \"publication_date\": \"2024-03-12\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/books/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Books Example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:38:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "236"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"user\": {\n            \"id\": 2,\n            \"username\": \"admin2\"\n        },\n        \"updated_at\": \"2024-03-12T17:38:01.435466Z\",\n        \"created_at\": \"2024-03-12T17:38:01.435518Z\",\n        \"title\": \"The Prince\",\n        \"author\": \"Niccolo Machiavelli\",\n        \"ISBN\": \"7839012342\",\n        \"publication_date\": \"2024-03-12\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Book Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/books/4/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books",
+						"4",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:41:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Not found.\"\n}"
+				},
+				{
+					"name": "Book Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/4/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:42:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "234"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"user\": {\n        \"id\": 2,\n        \"username\": \"admin2\"\n    },\n    \"updated_at\": \"2024-03-12T17:38:01.435466Z\",\n    \"created_at\": \"2024-03-12T17:38:01.435518Z\",\n    \"title\": \"The Prince\",\n    \"author\": \"Niccolo Machiavelli\",\n    \"ISBN\": \"7839012342\",\n    \"publication_date\": \"2024-03-12\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"The Prince\",\r\n  \"author\": \"Niccolo Machiavelli\",\r\n  \"ISBN\": \"7839012342\",\r\n  \"publication_date\": \"1883-03-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/books/4/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books",
+						"4",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:41:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Not found.\"\n}"
+				},
+				{
+					"name": "Updated Book",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"The Prince\",\r\n  \"author\": \"Niccolo Machiavelli\",\r\n  \"ISBN\": \"7839012342\",\r\n  \"publication_date\": \"1883-03-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/books/4/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:43:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "198"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"updated_at\": \"2024-03-12T17:43:31.136508Z\",\n    \"created_at\": \"2024-03-12T17:38:01.435518Z\",\n    \"title\": \"The Prince\",\n    \"author\": \"Niccolo Machiavelli\",\n    \"ISBN\": \"7839012342\",\n    \"publication_date\": \"1883-03-12\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/books/4/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books",
+						"4",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/1/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:41:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Not found.\"\n}"
+				},
+				{
+					"name": "Deleted Book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwMzUxMzczLCJpYXQiOjE3MTAyNjQ5NzMsImp0aSI6ImJjMzAyNDBkNDc1NjRhYTJhZDk1NjVlYzQwMDcwZTM4IiwidXNlcl9pZCI6Mn0.Gxdga9f6fimzDxI9qJLTQ0TUBKlp7O9Rwy4_Bw3JiIY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/books/4/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"4",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:45:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Retrieve by ISBN",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Retrieved book by ISBN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/books/book-details/9780375846670/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"book-details",
+								"9780375846670",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:46:58 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "350"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"title\": \"Andrew Lost #17\",\n            \"author\": \"J.C. Greenburg\",\n            \"publish_date\": \"January 22, 2008\",\n            \"isbn\": [\n                \"0375946675\",\n                \"9780375946677\",\n                \"0375846670\",\n                \"9780375846670\"\n            ]\n        },\n        {\n            \"title\": \"In the desert\",\n            \"author\": \"J. C. Greenburg\",\n            \"publish_date\": \"2008\",\n            \"isbn\": [\n                \"0375846670\",\n                \"9780307496126\",\n                \"9780375946677\",\n                \"9780375846670\",\n                \"0375946675\",\n                \"0307496120\"\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Rate Limit",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/books/book-details/9780375846670/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"books",
+								"book-details",
+								"9780375846670",
+								""
+							]
+						}
+					},
+					"status": "Too Many Requests",
+					"code": 429,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 17:47:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.12.2"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Retry-After",
+							"value": "18"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Request was throttled. Expected available in 18 seconds.\"\n}"
+				}
+			]
+		}
+	]
+}

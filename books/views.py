@@ -5,7 +5,8 @@ from rest_framework.response import Response
 
 from .models import Book
 from .pagination import BookPagination
-from .serializers import BookCreateEditSerializer, BookSerializer
+from .serializers import BookCreateEditSerializer, BookDataSerializer, BookSerializer
+from .third_party import OpenLibrary
 
 
 class BookListCreateAPIView(generics.GenericAPIView):
@@ -46,7 +47,10 @@ class BookDetailAPIView(generics.GenericAPIView):
         return self.serializer_classes.get(self.request.method)
 
     def get_queryset(self):
-        return Book.objects.filter(user=self.request.user)
+        if self.request.user.is_authenticated:
+            return Book.objects.filter(user=self.request.user)
+        else:
+            return Book.objects.none()
 
     def get(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -65,3 +69,15 @@ class BookDetailAPIView(generics.GenericAPIView):
         instance = self.get_object()
         instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class BookDetailsByISBNAPIView(generics.GenericAPIView):
+    permission_classes = (permissions.IsAuthenticated,)
+    serializer_class = BookDataSerializer
+
+    def get(self, request, isbn):
+        book_details = OpenLibrary.fetch_book_details(isbn)
+        if book_details.get("status"):
+            return Response(book_details, status=status.HTTP_200_OK)
+        else:
+            return Response(book_details, status=status.HTTP_404_NOT_FOUND)

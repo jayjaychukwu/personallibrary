@@ -17,3 +17,10 @@ class BookCreateEditSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         exclude = ["user"]
+
+
+class BookDataSerializer(serializers.Serializer):
+    title = serializers.CharField()
+    author = serializers.CharField()
+    publish_date = serializers.CharField()
+    isbn = serializers.ListField(child=serializers.CharField())

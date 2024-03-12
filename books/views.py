@@ -72,7 +72,7 @@ class BookDetailAPIView(generics.GenericAPIView):
 
 
 class BookDetailsByISBNAPIView(generics.GenericAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
+    # permission_classes = (permissions.IsAuthenticated,)
     serializer_class = BookDataSerializer
 
     def get(self, request, isbn):

@@ -45,7 +45,3 @@ class TestOpenLibrary(unittest.TestCase):
         self.assertEqual(len(result["data"]), 2)
         self.assertEqual(result["data"][0]["title"], "Book 1")
         self.assertEqual(result["data"][1]["title"], "Book 2")
-
-
-if __name__ == "__main__":
-    unittest.main()
